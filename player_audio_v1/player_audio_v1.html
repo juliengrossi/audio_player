@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="player_audio_v1.css" />
+    <script src="player_audio_v1.js" defer></script>
+    <title>Audio V1</title>
+  </head>
+  <body>
+    <div id="player">
+      <div class="lcdDisplay" id="screen">
+        <div class="lcdText songName" id="songNameContainer">
+          <div class="lcdText songName" id="songName">WELCOME</div>
+        </div>
+        <div class="lcdText remTime" id="remTime">--:--</div>
+      </div>
+      <div id="controls">
+        <div class="button control stopButton" id="stopButton"></div>
+        <div class="button control playButton" id="playButton"></div>
+        <div class="button control pauseButton" id="pauseButton"></div>
+        <div class="button control rwButton" id="rwButton"></div>
+        <div class="button control fwButton" id="fwButton"></div>
+        <div class="button control volDownButton" id="volDownButton"></div>
+        <div class="lcdDisplay lcdText volume" id="volume"></div>
+        <div class="button control volUpButton" id="volUpButton"></div>
+        <div class="button control muteButton" id="muteButton"></div>
+      </div>
+    </div>
+  </body>
+</html>
