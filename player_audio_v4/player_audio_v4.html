@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="player_audio_v4.css" />
+    <script src="player_audio_v4.js" defer></script>
+    <title>Audio V4</title>
+  </head>
+  <body>
+    <div><h1>MP3 PLAYER V4</h1></div>
+    <div id="player">
+      <div class="lcdDisplay" id="screen">
+        <div class="lcdText songName" id="songNameContainer">
+          <div class="lcdText songName" id="songName">WELCOME</div>
+        </div>
+        <div class="lcdText remTime" id="remTime">-:--:-- <br>-:--:--</div>
+      </div>
+      <div id="controls">
+        <div
+          class="button control loadButton"
+          id="loadButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-liste-30.png" alt="" />
+        </div>        
+        <div
+          class="button control stopButton"
+          id="stopButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-arrêter-30.png" alt="" />
+        </div>
+        <div
+          class="button control playButton play"
+          id="playButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        ></div>
+        <div
+          class="button control rwButton"
+          id="rwButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-rembobiner-30.png" alt="" />
+        </div>
+        <div class="lcdText nonLcd track" id="track"></div>
+        <div
+          class="button control fwButton"
+          id="fwButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-avance-rapide-30.png" alt="" />
+        </div>
+        <div
+          class="button control volDownButton"
+          id="volDownButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-volume-bas-30.png" alt="" />
+        </div>
+        <div class="lcdText nonLcd volume" id="volume"></div>
+        <div
+          class="button control volUpButton"
+          id="volUpButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-volume-élevé-30.png" alt="" />
+        </div>
+        <div
+          class="button control muteButton"
+          id="muteButton"
+          onmousedown="pressButton(this)"
+          onmouseup="unpressButton(this)"
+        >
+          <img src="./images/icons8-muet-30.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <p><br>Play and pause buttons merged <br> New display for playlist position <br> Switched path for title/artist on main screen</p>      
+    </div>
+  </body>
+</html>
+
+<!-- https://www.bensound.com/bensound-music/bensound-summer.mp3 -->
