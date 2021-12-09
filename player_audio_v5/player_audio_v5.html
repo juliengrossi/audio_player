@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="player_audio_v5.css" />
+    <script src="player_audio_v5.js" defer></script>
+    <title>Audio V5</title>
+  </head>
+  <body>
+    <div><h1>MP3 PLAYER V5</h1></div>
+    <div id="player">
+      <div class="hide show" id="playlistSelection">
+        <h1 id="H1">Select Playlist</h1>
+        <div id="playlists">
+          <div class="playlistBorders" id="0" onclick="load(this.id)">
+            <img src="./images/pomo.png" alt="pomo" />
+          </div>
+          <div class="playlistBorders" id="1" onclick="load(this.id)">
+            <img src="./images/knifeParty.png" alt="knife party" />
+          </div>
+          <div class="playlistBorders" id="2" onclick="load(this.id)">
+            <img src="./images/bensound.png" alt="bensound" />
+          </div>
+        </div>
+      </div>
+      <div class="lcdDisplay" id="screen">
+        <div class="lcdText songName" id="songNameContainer">
+          <div class="lcdText songName" id="songName">WELCOME</div>
+        </div>
+        <a id="rewindControl"><img src="./images/icons8-reculer-de-10-30.png" alt="" /></a>
+        <div id="times"><div class="lcdText totalTime" id="totalTime">-:--:--</div>
+        <div class="lcdText remTime" id="remTime">-:--:--</div></div>
+        <a id="forwardControl"><img src="./images/icons8-avancer-de-10-30.png" alt="" /></a>        
+      </div>
+      <div id="controls">
+        <div class="button control insetShadows loadButton" id="loadButton">
+          <img src="./images/icons8-liste-30.png" alt="" />
+        </div>
+        <div class="button control insetShadows stopButton" id="stopButton">
+          <img src="./images/icons8-arrêter-30.png" alt="" />
+        </div>
+        <div
+          class="button control insetShadows playButton play"
+          id="playButton"
+        ></div>
+        <div class="button control insetShadows rwButton" id="rwButton">
+          <img src="./images/icons8-rembobiner-30.png" alt="" />
+        </div>
+        <div class="lcdText nonLcd track" id="track"></div>
+        <div class="button control insetShadows fwButton" id="fwButton">
+          <img src="./images/icons8-avance-rapide-30.png" alt="" />
+        </div>
+        <div
+          class="button control insetShadows shuffleButton shuffle"
+          id="shuffleButton"
+        ></div>
+        <div
+          class="button control insetShadows volDownButton"
+          id="volDownButton"
+        >
+          <img src="./images/icons8-volume-bas-30.png" alt="" />
+        </div>
+        <div class="lcdText nonLcd volume" id="volume"></div>
+        <div class="button control insetShadows volUpButton" id="volUpButton">
+          <img src="./images/icons8-volume-élevé-30.png" alt="" />
+        </div>
+        <div class="button control insetShadows muteButton" id="muteButton">
+          <img src="./images/icons8-muet-30.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <p><br>Play and pause buttons merged <br> Press shuffle twice for repeat</p>      
+    </div>
+  </body>
+</html>
